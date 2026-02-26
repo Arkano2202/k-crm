@@ -11,10 +11,10 @@ class Database {
         // Cargar configuración desde variables de entorno
         $this->loadEnvConfig();
         
-        $this->host = $this->getEnv('DB_HOST', 'localhost');
+        $this->host = $this->getEnv('DB_HOST', 'crmc-kcrm-0yjwn8');
         $this->db_name = $this->getEnv('DB_NAME', 'crm');
         $this->username = $this->getEnv('DB_USERNAME', 'root');
-        $this->password = $this->getEnv('DB_PASSWORD', '');
+        $this->password = $this->getEnv('DB_PASSWORD', 'Inv12345678.**');
     }
 
     public function getConnection() {
